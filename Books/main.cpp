@@ -88,6 +88,8 @@ private:
 	Node<TYP>* head;			// head is the first of the list;
 	Node<TYP>* now;
 	Node<TYP>* tail;			// tail is the last of the list;
+	typedef *TYP _value;
+	typedef _value iterator;
 };
 template<class TYP>
 void LinkedList<TYP>::pop_back(void)
